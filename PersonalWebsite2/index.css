@@ -1,0 +1,227 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button{
+    padding: 15px 20px;
+    border-radius: 6%;
+    background-color: #FFCDAB;
+    border: solid 2px #707070 ;
+}
+
+/*navigation bar*/
+header{
+    width: 100%;
+    background-color: #5D5D5A;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 60px;
+}
+
+header li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    border-radius: 10%;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    margin: 10px 20px 0px 20px;
+    text-decoration-line: none;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+/* name  */
+.nav-name a{
+    margin-right: 150px;
+    margin-left: 10px;
+}
+.nav-name a:hover{
+    background-color: #5d5d5d;
+}
+
+header a:hover{
+    background-color: black;
+}
+
+button.about-me:hover{
+    background-color: #5D5D5A ;
+    color: white;
+    transition: all .5s ease;
+}
+
+.nav-resume{
+    position: absolute;
+    top: 35%;
+    right: 50px;
+}
+
+/* container #1 */
+
+.grid-container-1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: middle;
+    height: 500px;
+    background-color: #FFF4E3;
+}
+
+.grid-c1-item-1{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.grid-c1-item-2{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* container #1 elements */
+#main-name{
+    font-family: "Sacramento", cursive;
+    font-size: 120px;
+    font-weight: lighter;
+    margin-bottom:-50px;
+}
+
+.grid-c1-item-1 h3{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.grid-c1-item-1 button{
+    margin-top: 20px;
+}
+
+#main-pic{
+    height: 400px;
+    width: auto;
+}
+/* media files */
+@media screen and (max-width: 800px) {
+    .grid-container-1{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: middle;
+        height: 1000px;
+        background-color: #FFF4E3;
+        }
+    }
+
+/* container #2 */
+
+.grid-container-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    height: 1500px;
+    background-color: #FF7272;
+    align-content: start;
+    
+}
+
+.grid-c2-item-1 h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: whitesmoke;
+    border: solid black;
+
+}
+/* Arrange pictures */
+.grid-c2-item-2{
+    width: 100%;
+    border: solid black;
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr; 
+    justify-content: middle;
+}
+img[src*="next"]{
+    margin: 20px auto;
+    height: 75px;
+    grid-column: 1/4
+}
+img[src*="plus"]{
+    margin: auto 50px;
+    height: 75px;
+    grid-column: 2/3;
+}
+
+.grid-c2-item-2 img:nth-child(1){
+    margin: 20px auto 0 auto;
+    height: 170px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 12%;
+    grid-column: 1/4;
+}
+.grid-c2-item-2 img:nth-child(3){
+    height: 170px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 12%;
+    grid-column: 1/2;
+    margin: auto;
+}
+.grid-c2-item-2 img:nth-child(3):hover{
+    transition: all .5s ease;
+    background-color: #5D5D5A;
+    opacity: 80%;
+}
+
+.grid-c2-item-2 img:nth-child(5){
+    height: 250px;
+    grid-column: 3/4;
+    border-radius: 12%;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin:auto;
+}
+
+.grid-c2-item-2 img:nth-child(7){
+    margin: auto;
+    height: 170px;
+    grid-column: 1/2;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 12%;
+
+}
+.grid-c2-item-2 img:nth-child(9){
+    margin: auto;
+    height: 250px;
+    grid-column: 3/4;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 12%;
+
+}
+.grid-c2-item-2 img:nth-child(11){
+    margin: auto;
+    height: 80px;
+    grid-column: 1/4;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 2%;
+
+}
+.grid-c2-item-2 img:nth-child(13){
+    margin: auto;
+    height: 170px;
+    grid-column: 1/4;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 12%;
+}
